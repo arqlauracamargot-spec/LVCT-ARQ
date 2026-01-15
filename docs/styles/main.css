@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #1f1f1f;
+  --secondary-color: #fbfbfb;
+  --accent-color: #f3f4f6;
+  --font-family-base: 'Inter', sans-serif;
+  --font-family-heading: 'Cormorant Garamond', serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-family-heading);
+  font-weight: 300;
+}
+
+.ethereal-text {
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: rgba(30, 30, 30, 0.55);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+  position: relative;
+  transition: opacity 0.25s ease;
+  opacity: 0.7;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.25s ease;
+  opacity: 0.6;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+section {
+  scroll-margin-top: 110px;
+}
