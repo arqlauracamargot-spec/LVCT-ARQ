@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-ethereal",
+  "version": "1.0.0",
+  "description": "A portfolio website showcasing architectural work with a focus on sustainability and design.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined'",
+    "test": "echo 'No tests defined'"
+  },
+  "keywords": [
+    "portfolio",
+    "architecture",
+    "web",
+    "design"
+  ],
+  "author": "Laura Valentina Camargo Toro",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
